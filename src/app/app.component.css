@@ -1,0 +1,57 @@
+h1{
+    font-family:monospace;
+    text-align: center;
+    color:#00f;
+}
+
+h3{
+    font-family:monospace;
+    text-align: center;
+    color:red;
+}
+
+input{
+    font-family:monospace;
+}
+
+.label-file {
+    cursor: pointer;
+    color: #00f;
+    font-weight: bold;
+    font-family:monospace;
+}
+
+.label-file:hover {
+    color: #25a5c4;
+}
+
+
+.input-file {
+    display: none;
+}
+
+table {
+    border:3px solid #00f;
+    border-collapse:collapse;
+    width:15%;
+    margin:auto;
+    font-family:monospace;
+}
+
+tbody {
+    background-color:#FFFFFF;
+
+    border:2px solid #00f;
+}
+
+.body{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    border:1px solid #25a5c4;
+    border-collapse:collapse;
+    padding: 10px;
+}

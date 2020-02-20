@@ -1,0 +1,28 @@
+  <div class="body">
+    <div>
+    <h1>{{title}}</h1>
+    <label for="fileinput" class="label-file">Choisir un fichier TS</label>
+    <input class="input-file" id="fileinput" type="file" (change)="selectFile($event)">
+    <h3 [hidden]="!isError">{{msg}}</h3>
+    </div>
+
+    <table summary="Diagramme de classe" *ngIf="className" id="diagramme">
+        <thead>
+          <tr class="cname">
+            <th>{{className}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let attribut of attributs">
+            <td class="catt" >{{attribut}}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr *ngFor="let methode of methodes">
+            <td class="cmeth" >{{methode}}()</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+<router-outlet></router-outlet>
